@@ -1,13 +1,15 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import Image from 'next/image'
+import Profile from '../components/profile'
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
         <title>LauVillegas.com</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="images/code.jpg" />
       </Head>
 
       <main className={styles.main}>
@@ -18,7 +20,7 @@ export default function Home() {
         <p className={styles.description}>
           <code className={styles.code}>A Dev's Journey</code>
         </p>
-
+        <Profile></Profile>
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h3>My Story &rarr;</h3>
